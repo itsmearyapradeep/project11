@@ -28,7 +28,7 @@ class experience implements Address,Qualification{
 }void main(){
   experience obj= experience();
   print("Resume application");
-  obj.show("Arya pradeep","Mayabhavan chunakkara mavelikkara", "Alappuzha" , "arya@gmail.com", 8590671082);
+  obj.show("Arya pradeep","Mayabhavan Chunakkara Mavelikara", "Alappuzha" , "arya@gmail.com", 8590671082);
   print('');
   print("Qualification");
   obj.details("BCA","71%",2023);
