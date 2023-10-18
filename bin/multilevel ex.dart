@@ -8,33 +8,33 @@ class Bank {
 
   void deposit(int?depoamount) {
     if (blns != 0 && blns >= minblns!) {
-      print("balace after deposite=${blns + depoamount!}");
+      print("balance after deposit=${blns + depoamount!}");
     }
     else {
       print("balance=$blns==$depoamount!-$minblns!");
     }
   }
 
-  void withdraw(int witamount) {
-    if (witamount < blns) {
-      print("balance amount after withdrwal=$blns-$witamount");
+  void withdraw(int withamount) {
+    if (withamount < blns) {
+      print("balance amount after withdrwal=$blns-$withamount");
     }
     else {
       print("insuffcient balance");
     }
   }
 }
-class sbikakkanadu extends Bank{
-  String name="rahul";
-  int? accountbalance;
+class sbikakkanad extends Bank{
+  String name="Arya";
+  int? account_balance;
   String ifsc="sbin";
   int sbiminblns=1000;
 }
 void main(){
-  sbikakkanadu obj=sbikakkanadu();
+  sbikakkanad obj=sbikakkanad();
   obj.minblns=obj.sbiminblns;
   print("account holder name=${obj.name}");
   print("accountbalance=${obj.blns=1000}");
   print("ifsc=${obj.ifsc}");
-  print("amount after deposite=${obj.blns+4000}");
+  print("amount after deposit=${obj.blns+4000}");
 }
